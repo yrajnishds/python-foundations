@@ -1,36 +1,32 @@
 import os
 
 # Base folder
-base_folder = "02_functions"
+base_folder = "03_pythonic"
 
-# Files inside 02_functions
+# Files inside 03_pythonic
 main_files = [
     "notes.md",
-    "basic_functions.py",
-    "parameters_and_return.py",
-    "default_arguments.py",
-    "variable_scope.py",
-    "lambda_functions.py",
-    "docstrings_example.py",
+    "list_comprehensions.py",
+    "dictionary_comprehensions.py",
+    "file_reading.py",
+    "file_writing.py",
+    "file_append.py",
+    "exception_handling.py",
+    "json_handling.py",
 ]
 
 # Practice files
 practice_files = [
-    "q01_factorial_function.py",
-    "q02_prime_function.py",
-    "q03_palindrome_function.py",
-    "q04_fibonacci_function.py",
-    "q05_max_of_three.py",
-    "q06_sum_list_function.py",
-    "q07_count_vowels_function.py",
-    "q08_reverse_string_function.py",
-    "q09_temperature_converter.py",
-    "q10_simple_calculator.py",
-    "q11_even_odd_function.py",
-    "q12_area_calculator.py",
-    "q13_word_counter.py",
-    "q14_remove_duplicates.py",
-    "q15_password_validator.py",
+    "q01_word_counter_file.py",
+    "q02_line_counter.py",
+    "q03_copy_file.py",
+    "q04_csv_reader_basic.py",
+    "q05_log_parser.py",
+    "q06_safe_division.py",
+    "q07_json_reader.py",
+    "q08_json_writer.py",
+    "q09_unique_words.py",
+    "q10_grade_calculator.py",
 ]
 
 # Create base folder
@@ -48,4 +44,4 @@ os.makedirs(practice_folder, exist_ok=True)
 for file in practice_files:
     open(os.path.join(practice_folder, file), "w").close()
 
-print("✅ 02_functions folder structure created successfully!")
+print("✅ 03_pythonic folder structure created successfully!")
